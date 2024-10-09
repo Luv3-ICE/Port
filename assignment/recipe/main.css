@@ -1,0 +1,280 @@
+.grid-container {
+	display: grid;
+    grid-template-columns: 15% auto 15%;
+	grid-template-rows: auto;
+	grid-gap: 5px;
+	font-family: 'Monaco';
+}
+
+.grid-container > div{
+    text-align: left;
+    background-color:rgb(247, 239, 164);
+}
+
+#header{
+	grid-column: 2 / span 1;
+	font-size: 15px;
+	text-align: center;
+}
+
+#main{
+	grid-column: 2 / span 1;
+	padding: 30px;
+	text-align: center;
+}
+
+#menu{
+	grid-column: 1 / span 1;
+	grid-row: 1 / span 2;
+	padding-left: 5%;
+	padding-top: 5%;
+}
+
+#right{
+	grid-column: 3 / span 1;
+	grid-row: 1 / span 2;
+	padding-left: 5%;
+	padding-top: 5%;
+}
+
+@media only screen and (max-width: 768px) {
+	.grid-container {
+		display: grid;
+		grid-template-columns: 20% auto;
+		grid-gap: 5px;
+		font-family: 'Monaco';
+	}
+
+	#header{
+		grid-column: 2 / span 1;
+		grid-row: 1 / span 1;
+	}
+
+	#main{
+		grid-column: 2 / span 1;
+		grid-row: 1 span 1;
+	}
+
+	#menu{
+		grid-column: 1 / span 1;
+		grid-row: 1 / span 3;
+	}
+	#right{
+		grid-column: 2 / span 1;
+		grid-row: 3 / span 1;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.grid-container {
+		display: grid;
+		grid-template-columns: auto;
+		grid-template-rows: auto;
+		grid-gap: 5px;
+	}
+	#header{
+		grid-column: 1 / span 1;
+		grid-row: 1;
+	}
+
+	#menu{
+		grid-column: 1 / span 1;
+		grid-row: 2;
+	}
+
+	#main{
+		grid-column: 1 / span 1;
+		grid-row: 3;
+	}
+
+	#right{
+		grid-column: 1 / span 2;
+		grid-row: 4;
+		text-align: center;
+		justify-content: center;
+	}
+
+	.display_pic{
+		text-align: center;
+	}
+
+	#menu{
+		text-align: center;
+		padding-top: 0px;
+		padding-left: 0px;
+	}
+
+	.menulist{
+		display: flex;
+		justify-content: space-between;
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+
+	.flex_container{
+		display: flex;
+		flex-wrap: wrap;
+		width: 300px;
+		text-align: center;
+	}
+
+	.bordertext{
+		width: fit-content;
+	}
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a:link{
+	color: rgb(255, 255, 255); 
+	background-color: rgb(48, 171, 70);
+	border-radius: 60%;
+	padding: 10px;
+}  
+
+body{
+    display: flex;
+    background-color: rgb(48, 171, 70);
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+}
+
+h1, h2, h4{
+    color: rgb(0, 0, 0);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+}
+
+#header h2{
+	padding: 10px;
+}
+
+#main h1{
+	padding-top: 20px;
+	padding-left: 5px;
+	padding-right: 5px;
+	font-size: 37px;
+}
+
+#main img{
+	width: 100%;
+}
+
+#menu div h4{
+	padding-bottom: 10px;
+}
+
+#more{
+	margin-bottom: 15px;
+	font-size: 13px;
+}
+
+#right .flex_container{
+	padding-left: 5px;
+}
+
+#right h4{
+	padding-bottom: 10px;
+}
+
+.left_page{
+    text-align: left;
+}
+
+.left_page h2{
+	padding-left: 40px;
+	padding-bottom: 20px;
+	padding-top: 50px;
+}
+
+.right_page{
+    text-align: right;
+}
+
+.flex_container{
+    display: flex;
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-bottom: 20px;
+}
+
+.bordertext{
+    width: 37%;
+    border: 5px dotted rgb(0, 0, 0);
+    border-radius: 50px;
+    text-align: left;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+.howto_textL{
+    padding: 15px;
+    text-align: left;
+	
+}
+
+.howto_textL li{
+	padding-bottom: 20px;
+}
+
+.howto_textR{
+    padding: 15px;
+    text-align: right;
+}
+
+li{
+    list-style: none;
+    color: rgb(0, 0, 0);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+}
+
+.ingr_pic img{
+    width: 40%;
+    margin-top: 37px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+#dec_pic{
+    width: 50px;
+}
+
+#result_pic{
+    width: 250px;
+    justify-content: center;
+}
+
+.display_pic img{
+	width: 50%;
+	padding-bottom: 50px;
+}
+
+#bg_text{
+    background-color:  rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 5px;
+}
+
+#marg_text{
+    margin-left: 20px;
+}
+
+hr.style1 {
+	background-color: rgb(48, 171, 70);
+    border-top: 5px dotted #ffffff;
+}
+
+#lit_pic {
+	width: 60px;
+	margin: 5px;
+	border-radius: 20%;
+}
+
+span{
+	vertical-align: middle;
+}

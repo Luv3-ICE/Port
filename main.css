@@ -1,0 +1,389 @@
+body{
+    margin: 0%;
+    padding: 0px 0px 0px 0px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 35% auto 30%;
+    grid-template-rows: 13% 40% 35% auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.grid-container > div {
+    background-color: rgb(245, 242, 232);
+    border: 1px solid rgb(0, 0, 0);
+}
+
+#header {
+    grid-column: 1 / span 3;
+    grid-row: 1;
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    text-align: right;
+}
+
+#mainpic {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 2;
+    justify-content: center;
+    background-color: rgba(240,240,240,255);
+}
+
+#maintext {
+    grid-column: 2 / span 2;
+    grid-row: 2 / span 1;
+    vertical-align: center;
+    text-align: left;
+    padding: 60px;
+}
+
+#about1{
+    grid-column: 2 / span 1;
+    grid-row: 3 / span 1;
+    text-align: center;
+    align-content: center;
+}
+
+#about2{
+    grid-column: 3 / span 1;
+    grid-row: 3 / span 1;
+    padding-left: 25px;
+    padding-right: 0px;
+    display: flex;
+    align-items: center;
+}
+
+#footer {
+    grid-column: 1 / span 3;
+    grid-row: 4;
+    padding: 30px;
+}
+
+@media only screen and (max-width: 1367px) {
+	.grid-container {
+		display: grid;
+		grid-template-columns: 45% auto;
+        grid-template-rows: 13% 35% 35% 10% 10%;
+        font-family: Arial, Helvetica, sans-serif;
+	}
+
+    #header{
+        grid-column: 1 / span 2;
+        grid-row: 1 / span 1;
+    }
+
+    #mainpic{
+        grid-column: 1 / span 1;
+        grid-row: 2 / span 2;
+    }
+
+    #maintext{
+        grid-column: 2 / span 1;
+        grid-row: 2 / span 1;
+    }
+
+    #about1{
+        grid-column: 2 / span 1;
+        grid-row: 3 / span 2;
+    }
+
+    #about2{
+        grid-column: 1 / span 1;
+        grid-row: 4 / span 1;
+    }
+
+    #footer{
+        grid-column: 1 / span 2;
+        grid-row: 5 / span 1;
+    }
+
+    #maintext h2{
+        font-size: 40px;
+    }
+}
+
+.grid-container-for-pj {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 7% 15% 5% auto auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.grid-container-for-pj > div {
+    background-color: rgb(245, 242, 232);
+    border: 1px solid rgb(0, 0, 0);
+}
+
+#header-pj {
+    grid-column: 1;
+    grid-row: 1;
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    text-align: right;
+}
+
+#about3{
+    grid-column: 1;
+    grid-row: 2;
+    text-align: left;
+    padding-left: 50px;
+    padding-bottom: 10px;
+    display: grid;
+    align-items: flex-end;
+}
+
+#about4{
+    grid-row: 3;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#slider{
+    /* grid-row: 4; */
+    display: flex;
+    /* position: relative;   */
+    /* flex-flow: row; */
+    padding: 50px;
+    justify-content: center;
+}
+
+.forcard{
+    justify-content: center;
+}
+
+#footer-pj{
+    grid-row: 5;
+    padding: 30px;
+}
+
+.flex_container{
+    display: flex;
+    align-items: center;
+}
+
+#icon{
+    width: 40px;
+    height: 40px;
+    margin-right: 25px;
+}
+
+h1{
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    margin: 0%;
+    text-align: left;
+}
+
+p{
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    margin-right: 25px;
+    margin-top: 3px;
+    margin-bottom: 0%;
+}
+
+#blockright{
+    justify-content: right;
+    text-align: right;
+}
+
+#pfp{
+    width: 100%;
+    height: fit-content;
+}
+
+li{
+    font-size: 15px;
+    text-align: left;
+    list-style-type: none;
+}
+
+#about2 li{
+    text-transform: uppercase;
+    margin-right: 50px;
+}
+
+#about1 h1{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+h2{
+    font-size: 60px;
+    margin: 0%;
+}
+
+h3{
+    font-size: 60px;
+    margin: 0%;
+}
+
+h4{
+    font-size: 50px;
+    margin: 0%;
+}
+
+#arrow{
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+}
+
+#about4 h2{
+    margin-top: 25px;
+}
+
+#about4 h1{
+    text-align: center;
+}
+
+#maintext li{
+    margin-top: 20px;
+}
+
+#maintext h2{
+    padding: 0;
+}
+
+
+/* ref : animation icon  https://pin.it/1ioSB3M */
+
+.appicons{
+    display: flex;
+    column-gap: 25px;
+    justify-content: center;
+}
+
+.appicon{
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    border-radius: 60%;
+    outline: 2px solid rgb(102, 102, 102);
+    transition-property: outline-offset, outline-color, background-color;
+    transition-duration: 0.25s;
+}
+
+.appicon img{
+    border-radius: 70%;
+}
+
+.appicon:hover{
+    outline-offset: 4px;
+}
+
+.appicon i{
+    margin: auto;
+}
+
+.appicon:hover{
+    animation: shake 0.25s;
+}
+
+@keyframes shake{
+    10% {
+        transform: rotate(15deg);
+    }
+    20% {
+        transform: rotate(-15deg);
+    }
+    30% {
+        transform: rotate(15deg);
+    }
+
+    40% {
+        transform: rotate(-15deg);
+    }
+}
+
+#skill{
+    width: 65%;
+    margin-top: 6px;
+}
+
+.card{
+    background: #fff;
+    border-radius: 20px;
+    margin-right: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    padding-bottom: 20px;
+    display: inline-block;
+    flex-direction: column;
+    margin-bottom: 30px;
+    height: fit-content;
+}
+
+.card .card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.card p{
+    text-align: center;
+    margin: 0;
+}
+
+.workimg{
+    height: 200px;
+    width: 200px;
+    padding: 10px;
+    margin-right: 0;
+    justify-content: center;
+}
+  
+#slider .card .workimg img{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    margin-right: 0;
+    justify-content: center;
+}
+
+#slider .card .workimg video{
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+}
+  
+.card .button{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+  
+.card .button button{
+    background: rgb(0, 0, 0);
+    outline: none;
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 8px 22px;
+    border-radius: 20px;
+    font-size: 12px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+  
+.button button:hover{
+    background:  rgb(164, 217, 237);
+    color: rgb(0, 0, 0);
+}
+span{
+    font-size: 10px;
+    color: rgb(143, 143, 143);
+}
+
+a{
+    color: rgb(62, 108, 183);
+}

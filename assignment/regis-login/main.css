@@ -1,0 +1,88 @@
+.testbox{
+    width: 30%;
+    margin: auto;
+}
+
+form{
+    width: 40%;
+    padding: 30px;
+    border-radius: 20px;
+    background: #fff;
+    box-shadow: 0 0 30px 0 #c7c3c0; 
+}
+
+span{
+    color: brown;
+    margin-left: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 5px;
+}
+
+input{
+    width: calc(100% - 10px);
+    padding: 5px;
+}
+
+input[type=radio]{
+    width: 20%;
+    width: 15px;
+    height: 15px;
+}
+
+.item{
+    position: relative;
+    margin: 10px;
+}
+
+.item-inline{
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content:space-between;
+    margin: 10px;
+    width: 95%
+}
+
+.btn-block{
+    text-align: center;
+    display: block;
+}
+
+button{
+    width: 150px;
+    padding: 10px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 20px; 
+    background: #bd6395;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+}
+
+button[type=reset]{
+    background-color: #b3b0b0;
+    color: #fff;
+}
+
+img{
+    border-radius: 50px;
+    width: 20%;
+}
+
+.pfp{
+    text-align: center;
+}
+
+form{
+    margin: auto;
+}

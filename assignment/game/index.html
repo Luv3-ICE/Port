@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title> HARVEST GAME </title>
+		<script type="text/javascript" src="game.js"></script>
+		<link rel ="stylesheet" type="text/css" href="game.css">
+		<link rel = "icon" href= "pic/barn.png" type = "image">
+		<!-- icon from :  https://www.vectorstock.com/royalty-free-vector/pixel-red-barn-isolated-vector-41987099 -->
+	</head>
+	<body>
+		<!-- these codes were adapted from https://courses.cs.washington.edu/courses/cse154/17sp/lecture/more-dom/code/squares.html  -->
+		<!-- all vegetable image from https://www.reddit.com/r/Minecraft/comments/dyd8v4/f_o_o_d/ -->
+		<!-- backgroung from https://pin.it/2Fr3IL0 -->
+		<!-- clock and sack image from freepik -->
+
+		<fieldset>
+			<!-- <legend> Control </legend> -->
+		<div id = "containermenu">
+			<div id = "menu">
+				<img id = "cropsimg" src = "pic/sack.png">
+			
+				<div class = "cropsnumbox">
+					<div id = "toptext"> AMOUNTS :  </div>
+					<input type = "text" name = "numbox" id = "numbox">
+				</div>
+			
+				<select name = "typeveg" id = "typeveg">
+					<option value = "carrot"> CARROT </option>
+					<option value = "corn"> CORN </option>
+					<option value = "onion"> ONION </option>
+					<option value = "potato"> POTATO </option>
+					<option value = "tomato"> TOMATO </option>
+				</select>
+			</div>
+
+			<div id = "timerClock">
+				<div id = "clock"></div>
+				<img id = "timerimg" src = "pic/timer.png">
+			</div>
+		</div>
+		</fieldset>
+		
+		<div id = "container">
+			<div id = "layer"></div>
+			<div id = "layer2"></div>
+
+			<div class = "button_display">
+			<button id = "start"> START </button>
+			</div>
+		</div>
+	</body>
+</html>
